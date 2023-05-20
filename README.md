@@ -26,7 +26,7 @@ To update the dashboard, follow these steps:
 ![](publish.png)
 
 **Updating the database**
-1. The databse can be updated using the [Google Sheet](https://docs.google.com/spreadsheets/d/1nkrPEsV_S3531LuuYnGHG2kYW7V5Mib2EY9H8KlooK0/edit#gid=567991390) accessible to DICE employees. 
+1. The database can be updated using the [Google Sheet](https://docs.google.com/spreadsheets/d/1nkrPEsV_S3531LuuYnGHG2kYW7V5Mib2EY9H8KlooK0/edit#gid=567991390) accessible to DICE employees. 
 2. In the Google Sheet, there are separate tabs for different genres. It is recommended to search for books by genre.
 3. Download the file in .xlsx format.
 4. After downloading, use the following Python code to convert the Excel file to CSV:
@@ -56,7 +56,7 @@ combined_df.to_csv('combined.csv', index=False)
 ```
 5. Replace 'combined.csv' in the code with the file name in your new directory. Run the app and publish it.
 
-For beginners, it may take around 30 minutes to become familiar with the process. However, once you gain exposure, updating the dashboard should take no more than 15
+For beginners, it may take around 30 minutes to become familiar with the process. However, once you gain exposure, updating the dashboard should take no more than 15.
 
 The shinyapps that will host the dashboard is useful and offers the important statistics on the application usages:
 
