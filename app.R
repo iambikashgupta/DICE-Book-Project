@@ -23,7 +23,9 @@ ui <- dashboardPage(
     title = "DICE Book Library"
   ),
   
-#  
+# the sidebar is collapsible and includes three searchable boxes for users to 
+# narrow down their inquiry for database
+
   dashboardSidebar(
     sidebarMenu(
       id = "sidebar",
@@ -46,6 +48,11 @@ ui <- dashboardPage(
     )
     ),
   
+
+  # the dashboard body includes a tabset panel composed of three tabs.
+  # the first tab is 'About', the second tab is a table, and the third tab 
+  # is a tree map of the 'books under consideration' by genre.
+
   dashboardBody(
     
     tabsetPanel(
@@ -91,6 +98,9 @@ ui <- dashboardPage(
 server <- function(input, output) {
   
   # Filter data based on search term
+  
+  # gives an entire dice_library table if there input search_box is empty
+  
   search_results <- reactive({
     if (input$search_box == "") {
       dice_library
