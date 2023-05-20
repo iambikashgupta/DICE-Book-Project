@@ -1,0 +1,13 @@
+name: dicebookproject
+title: dicebookproject
+username:
+account: heinzdiceoffice
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9148695
+bundleId: 7240955
+url: https://heinzdiceoffice.shinyapps.io/dicebookproject/
+when: 1684554660.59922
+lastSyncTime: 1684554660.59923
+asMultiple: FALSE
+asStatic: FALSE

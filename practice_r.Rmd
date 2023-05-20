@@ -1,0 +1,30 @@
+---
+title: "practice_r"
+author: "Bikash Gupta"
+date: "2023-05-19"
+output: html_document
+---
+
+```{r}
+
+# Load data
+dice_library <- read.csv("dice_library.csv")
+genre_data <- dice_library %>% count(Genre)
+    
+
+```
+
+```{r}
+genre_data
+
+```
+
+
+```{r}
+plot_ly(genre_data, labels = ~Genre, parents = "", values = ~n, type = 'treemap') %>%
+  layout(title = "Current Book Genre Distribution",
+         xaxis = list(showgrid = FALSE, zeroline = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE))
+
+
+```
